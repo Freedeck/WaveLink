@@ -7,7 +7,7 @@ class WaveLink extends Plugin {
     wlc;
     constructor() {
         super('Elgato WaveLink', 'Freedeck', 'WaveLink', false);
-        this.version = "2.0.1";
+        this.version = "2.1.0";
     }
 
     onInitialize () {
