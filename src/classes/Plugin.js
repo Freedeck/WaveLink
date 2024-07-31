@@ -97,8 +97,8 @@ module.exports = class Plugin {
         console.log('[DEV ENV] Added import: ' + file);
     }
 
-    registerNewType (name, type,dat={}) {
-        console.log('[DEV ENV] Registered new type: ' + name + ' (' + type + ')' +' with data: ' + dat);
+    registerNewType (name, type,dat={},rt='button') {
+        console.log('[DEV ENV] Registered new ' + rt + ' type: ' + name + ' (' + type + ')' +' with data: ' + dat);
     }
 
     onInitialize () {

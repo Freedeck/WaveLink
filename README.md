@@ -1,32 +1,35 @@
-# Freedeck Plugin Dev Environment
+# WaveLink
 
-[This is meant for FD6!](https://github.com/Freedeck/6/)
-Freedeck6 (FD6) is going to use a fully revamped plugin system:
+Control your Elgato Wave Link devices from your Freedeck with this plugin!
 
-- Add your own dependencies with a Node project in ASAR format!
-- uhh
-- Plugins are more powerful
+This plugin is only available to Freedeck v6.0.0-ob5 or higher.
 
-Anyways, to use this, it's pretty self explanatory. Take a look at any folder with .src at the end, you'll want to copy that. ExamplePlugin is a nice and clean base.  
+## Features
 
-In `index.js`, you'll want to change these lines to reflect your plugin:
+- Monitor/Stream muting on any input! (Mic, Stream, Game, etc.)
+- Monitor/Stream volume slider on any input! (Mic, Stream, Game, etc.)
 
-```js
-let name = 'ExamplePlugin'
-let bundleName = name + '.Freedeck'
-``` 
+## Installation
 
-(except the last one if you want .Freedeck after the name.)
+### From Marketplace
 
-> Example: if you have a folder called 'MyAmazingPlugin.src', change the `name` variable to `MyAmazingPlugin` and let FreedeckDevEnv do the rest for you!
+In Freedeck, click Marketplace and scroll until you see `WaveLink`! Click "Download" and enjoy the Elgato experience, from your Freedeck!  
 
-## Running
+### From GitHub
 
-Running a plugin uses a simulated Plugin class. This means you don't need to keep restarting Freedeck to test changes, unless it's something like a button press.  
+- Go to Releases, and download the `OS-ARCH-node-20.x.Freedeck` file.  
 
-To build and run your plugin in the dev env, just do `node index.js` and let FreedeckDevEnv do the rest!  
+  - If you're on Windows, download `windows-x64-node-20.x.Freedeck`.  
+  - Linux: `linux-x64-node-20.x.Freedeck`.  
 
-Very much magic.
+- If the plugin doesn't work (consecutive crashes), try one with `node-18.x` in the name.  
 
-## JS Hooks? What?
-JS hooks are a powerful feature introduced in Plugins v2. They allow you to expand Freedeck Companion's functionality, just check out JSHookExample.src to see how to use them!
+- Rename it to `WaveLink.Freedeck`
+  - This step is important! The plugin will not correctly load without this!
+
+- Put it in the `plugins` folder of Freedeck.
+  - The default Freedeck folder is `C:\Users\YOU\Documents\Freedeck\freedeck`.
+
+- Start Freedeck!
+
+- Enjoy

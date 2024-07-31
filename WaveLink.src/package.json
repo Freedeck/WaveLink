@@ -1,5 +1,5 @@
 {
-  "name": "exampleplugin",
+  "name": "wavelink",
   "version": "1.0.0",
   "description": "",
   "main": "config.js",
@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@darrellvs/node-wave-link-sdk": "^1.0.14",
+    "wavelink": "file:"
+  }
 }

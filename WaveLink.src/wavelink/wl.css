@@ -1,0 +1,9 @@
+.wl_inactive {
+  background-color: red;
+  color: white;
+}
+
+.wl_active {
+  background-color: lime;
+  color: black;
+}
