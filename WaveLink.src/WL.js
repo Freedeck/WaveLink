@@ -6,8 +6,8 @@ const {WaveLinkController} = require('@darrellvs/node-wave-link-sdk');
 class WaveLink extends Plugin {
     wlc;
     constructor() {
-        super('Elgato WaveLink', 'Freedeck', 'WaveLink', false);
-        this.version = "2.1.0";
+        super('Wave Link', 'Freedeck', 'WaveLink', false);
+        this.version = "2.1.1";
     }
 
     onInitialize () {
