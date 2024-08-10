@@ -7,7 +7,7 @@ class WaveLink extends Plugin {
     wlc;
     constructor() {
         super('Wave Link', 'Freedeck', 'WaveLink', false);
-        this.version = "2.1.1";
+        this.version = "2.2.0";
     }
 
     onInitialize () {
